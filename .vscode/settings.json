@@ -1,0 +1,22 @@
+{
+  "liveServer.settings.port": 0,
+  "liveServer.settings.host": "127.0.0.1",
+  "liveServer.settings.root": "/",
+  "liveServer.settings.useLocalIp": false,
+  "liveServer.settings.CustomBrowser": "microsoft-edge",
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "liveServer.settings.NoBrowser": false,
+  "liveServer.settings.https": {
+    "enable": false,
+    "cert": "",
+    "key": "",
+    "passphrase": ""
+  },
+  "liveServer.settings.proxy": {
+    "enable": false,
+    "baseUri": "/",
+    "proxyUri": ""
+  },
+  "liveServer.settings.mount": [],
+  "liveServer.settings.file": ""
+}
