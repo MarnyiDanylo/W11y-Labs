@@ -7,80 +7,86 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Практична 7. Доступні вкладки</h1>
-    <div role="tablist">
-      <button
-        id="tab1"
-        role="tab"
-        aria-selected="true"
-        aria-controls="panel-tab1"
-        class="button"
-      >
-        Вкладка 1
-      </button>
-      <button
-        id="tab2"
-        role="tab"
-        aria-selected="false"
-        aria-controls="panel-tab2"
-        class="button"
-      >
-        Вкладка 2
-      </button>
-      <button
-        id="tab3"
-        role="tab"
-        aria-selected="false"
-        aria-controls="panel-tab3"
-        class="button"
-      >
-        Вкладка 3
-      </button>
-    </div>
-    <div id="panel-tab1" role="tabpanel" aria-labelledby="tab1">
-      <p>Вміст вкладки 1</p>
-    </div>
-    <div id="panel-tab2" role="tabpanel" aria-labelledby="tab2" hidden>
-      <button id="open-dialog-btn" aria-haspopup="dialog" onclick="showModal()">
-        Відкрити налаштування профілю
-      </button>
+    <main>
+      <h1>Практична 7. Доступні вкладки</h1>
+      <div role="tablist">
+        <button
+          id="tab1"
+          role="tab"
+          aria-selected="true"
+          aria-controls="panel-tab1"
+          class="button"
+        >
+          Вкладка 1
+        </button>
+        <button
+          id="tab2"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-tab2"
+          class="button"
+        >
+          Вкладка 2
+        </button>
+        <button
+          id="tab3"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-tab3"
+          class="button"
+        >
+          Вкладка 3
+        </button>
+      </div>
+      <div id="panel-tab1" role="tabpanel" aria-labelledby="tab1">
+        <p>Вміст вкладки 1</p>
+      </div>
+      <div id="panel-tab2" role="tabpanel" aria-labelledby="tab2" hidden>
+        <button
+          id="open-dialog-btn"
+          aria-haspopup="dialog"
+          onclick="showModal()"
+        >
+          Відкрити налаштування профілю
+        </button>
 
-      <div
-        id="modal-container"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="modal-title"
-        aria-describedby="modal-description"
-        tabindex="-1"
-        hidden
-      >
-        <div class="modal-content">
-          <h2 id="modal-title">Редагування профілю</h2>
-          <p id="modal-description">
-            Будь ласка, введіть свої дані нижче. Всі поля є обов'язковими для
-            заповнення.
-          </p>
+        <div
+          id="modal-container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-title"
+          aria-describedby="modal-description"
+          tabindex="-1"
+          hidden
+        >
+          <div class="modal-content">
+            <h2 id="modal-title">Редагування профілю</h2>
+            <p id="modal-description">
+              Будь ласка, введіть свої дані нижче. Всі поля є обов'язковими для
+              заповнення.
+            </p>
 
-          <form>
-            <label for="username">Ім'я користувача:</label>
-            <input type="text" id="username" name="username" />
+            <form>
+              <label for="username">Ім'я користувача:</label>
+              <input type="text" id="username" name="username" />
 
-            <label for="email">Електронна пошта:</label>
-            <input type="email" id="email" name="email" />
+              <label for="email">Електронна пошта:</label>
+              <input type="email" id="email" name="email" />
 
-            <div class="button-group">
-              <button type="submit" id="save-btn">Зберегти зміни</button>
-              <button type="button" id="close-btn" onclick="hideModal()">
-                Скасувати
-              </button>
-            </div>
-          </form>
+              <div class="button-group">
+                <button type="submit" id="save-btn">Зберегти зміни</button>
+                <button type="button" id="close-btn" onclick="hideModal()">
+                  Скасувати
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="panel-tab3" role="tabpanel" aria-labelledby="tab3" hidden>
-      <p>Вміст вкладки 3</p>
-    </div>
+      <div id="panel-tab3" role="tabpanel" aria-labelledby="tab3" hidden>
+        <p>Вміст вкладки 3</p>
+      </div>
+    </main>
     <script src="script.js"></script>
     <script src="dialog.js"></script>
   </body>
